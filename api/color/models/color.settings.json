@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colors",
+  "info": {
+    "name": "color",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hex": {
+      "type": "string"
+    },
+    "name": {
+      "type": "uid",
+      "targetField": "hex"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

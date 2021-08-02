@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_products_accessories",
+  "info": {
+    "name": "accessory",
+    "icon": "universal-access"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "model": "color"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

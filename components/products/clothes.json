@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_products_clothes",
+  "info": {
+    "name": "clothes",
+    "icon": "tshirt"
+  },
+  "options": {},
+  "attributes": {
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Unisex",
+        "Hombre",
+        "Mujer"
+      ]
+    },
+    "colors": {
+      "collection": "color"
+    },
+    "sizes": {
+      "collection": "size"
+    },
+    "imgs": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

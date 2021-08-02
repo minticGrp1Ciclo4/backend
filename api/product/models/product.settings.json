@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "category": {
+      "via": "products",
+      "model": "category"
+    },
+    "extend": {
+      "type": "dynamiczone",
+      "components": [
+        "products.accessory",
+        "products.clothes"
+      ],
+      "max": 1
+    }
+  }
+}
