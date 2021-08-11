@@ -17,10 +17,13 @@
     },
     "name": {
       "type": "uid",
-      "targetField": "hex"
+      "targetField": "colorName"
     },
     "status": {
       "type": "boolean"
+    },
+    "colorName": {
+      "type": "string"
     }
   }
 }
