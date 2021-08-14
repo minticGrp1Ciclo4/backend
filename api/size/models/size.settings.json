@@ -8,12 +8,13 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "data": {
-      "type": "uid"
+      "type": "uid",
+      "required": true
     },
     "status": {
       "type": "boolean"
